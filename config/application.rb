@@ -27,6 +27,8 @@ module Frontendtest
         resource '*', headers: :any, methods: [:get, :post, :options]
       end
     end
+
+    config.assets.paths << Rails.root.join('node_modules')
     
   end
 end
